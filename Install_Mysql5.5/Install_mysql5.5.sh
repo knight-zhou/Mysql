@@ -136,6 +136,10 @@ cp ..../my.cnf /etc/
 ##≥ı ºªØdb
 cp /usr/local/mysql/scripts/mysql_install_db /usr/local/mysql/bin/
 
+#####
+#or /usr/local/mysql/scripts/mysql_install_db --defaults-file=/usr/local/mysql/etc/my.cnf --user=mysql --datadir=/data/dbdata/mysqldata --basedir=/usr/local/mysql
+#####
+
 cd /usr/local/mysql
 
 ./bin/mysql_install_db  --defaults-file=/etc/my.cnf  --user="$user"
