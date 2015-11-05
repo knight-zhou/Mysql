@@ -2,6 +2,7 @@
 ##SCRIPT:install_mysql.sh
 ##AUTHOR:knight
 ##DATE:2015-6-23
+#basic for lock
 ##指定需要设定的值
 user=mysql
 group=mysql
