@@ -27,3 +27,9 @@ show slave status\G;
 show binlog events\G;
 
 show processlist;
+
+对于主从复制老是不成功的原因:
+#主从复制不要开启
+
+#relay-log=/opt/data/mysql/relay-log/relay-log.bin
+开启后会经常提示在relay-log.index  找不到 所以不让其写入文件。
