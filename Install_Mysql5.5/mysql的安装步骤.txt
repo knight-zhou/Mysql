@@ -1,0 +1,23 @@
+程序路径:
+weiyun/数据库/mysql
+
+安装版本:
+mysql-5.5.36-linux2.6-x86_64.tar
+
+查看mysql的编译参数:
+cat /usr/local/mysql/bin/mysqlbug|grep configure
+
+
+然后初始化表：
+./mysql_install_db --defaults-file=/etc/my.cnf  --user=mysql --datadir=/opt/data/mysql/data --basedir=/usr/local/mysql
+
+用启动脚本启动即完成数据库的安装
+
+
+######################## 数据迁移方法
+
+由于是同一个版本直接将数据文件拷贝过来即可。
+然抽修改属主和数组
+chown -R mysql.mysql /opt/data/mysql/data
+
+
